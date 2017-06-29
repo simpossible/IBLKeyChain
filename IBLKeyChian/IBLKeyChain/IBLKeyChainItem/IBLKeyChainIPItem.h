@@ -16,4 +16,9 @@
 @property (nonatomic, copy) NSString * itemPort;
 
 @property (nonatomic, copy) NSString * itemPath;
+@property (nonatomic, copy) NSString * itemServer;
+
+@property (nonatomic, copy) NSString * itemProtocol;
+
+@property (nonatomic, copy) NSString * itemAuthenticationType;
 @end

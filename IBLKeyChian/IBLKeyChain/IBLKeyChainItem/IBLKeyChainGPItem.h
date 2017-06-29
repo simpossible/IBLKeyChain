@@ -15,12 +15,13 @@
  通用密码
  kSecClassGenericPassword
  数据库的key 为 account+service
+ type common des is useable in the item
  */
 @interface IBLKeyChainGPItem : IBLKeyChainItem
 
 /**
  账号
- 
+ mainkey 有这个值说明当前的字段属于主键
  */
 @property (nonatomic, copy) NSString * itemAccount;
 
@@ -30,16 +31,19 @@
  */
 @property (nonatomic, copy) NSString * itemService;
 
+
+/**
+ mainkey 有这个值说明当前的字段属于主键
+ */
 @property (nonatomic, copy) NSString * itemGeneric;
 
 @property (nonatomic, copy) NSString * itemSecurityDomain;
 
-@property (nonatomic, copy) NSString * itemServer;
 
-@property (nonatomic, copy) NSString * itemProtocol;
 
-@property (nonatomic, copy) NSString * itemAuthenticationType;
-
+/**
+ 值，这个可以通过 update 函数进行更新。其他的创建的时候就已经指定了。
+ */
 @property (nonatomic, copy) NSData * itemValueData;
 
 @end

@@ -30,27 +30,21 @@
         [dic setObject:self.itemSecurityDomain forKey:(id)kSecAttrSecurityDomain];
     }
     
-    
-    if (self.itemServer) {
-        [dic setObject:self.itemServer forKey:(id)kSecAttrServer];
-    }
-    
-    if (self.itemProtocol) {
-        [dic setObject:self.itemProtocol forKey:(id)kSecAttrProtocol];
-    }
-    
-    
-    if (self.itemAuthenticationType) {
-        [dic setObject:self.itemAuthenticationType forKey:(id)kSecAttrAuthenticationType];
-    }
-    
-    
     if (self.itemValueData) {
         [dic setObject:self.itemValueData forKey:(id)kSecValueData];
     }
     
     if (self.accessGroup) {
         [dic setObject:self.accessGroup forKey:(id)kSecAttrAccessGroup];
+    }
+    if (self.itemType) {
+        [dic setObject:self.itemType forKey:(id)kSecAttrType];
+    }
+    if (self.itemComment) {
+        [dic setObject:self.itemComment forKey:(id)kSecAttrComment];
+    }
+    if (self.itemDescription) {
+        [dic setObject:self.itemDescription forKey:(id)kSecAttrDescription];
     }
     
     [dic setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
@@ -67,6 +61,10 @@
         self.itemSynchronizable = [dic objectForKey:(id)kSecAttrSynchronizable];
 //        NSString *sha = [dic objectForKey:(id)kSecSharedPassword];
         self.itemService = [dic objectForKey:(id)kSecAttrService];
+        self.itemGeneric = [dic objectForKey:(id)kSecAttrGeneric];
+        self.itemType = [dic objectForKey:(id)kSecAttrType];
+        self.itemDescription = [dic objectForKey:(id)kSecAttrDescription];
+        self.itemComment = [dic objectForKey:(id)kSecAttrComment];
     }
 }
 @end

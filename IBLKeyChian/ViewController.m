@@ -28,6 +28,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *monifyDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *accessGroupLabel;
 @property (weak, nonatomic) IBOutlet UITextField *accessGroupTextfile;
+@property (weak, nonatomic) IBOutlet UITextField *genericFiled;
+
+@property (weak, nonatomic) IBOutlet UITextField *serverfiled;
+@property (weak, nonatomic) IBOutlet UITextField *authTypeFiled;
+
+@property (weak, nonatomic) IBOutlet UITextField *protocolFiled;
 
 @end
 
@@ -51,27 +57,59 @@
 }
 
 - (IBAction)toadd:(id)sender {
+    IBLKeyChainGPItem *gpItem =[self getKeychainItem];
+    OSStatus a =  [[IBLKeyChainAccessor defaultAccessor] storeItem:gpItem];
+    
+   [self updateShowWithItem:gpItem andStatu:a];
+    
+}
+- (IBAction)toquery:(id)sender {
+    IBLKeyChainGPItem *gpItem =[self getKeychainItem];
+    //    gpItem.itemPort = @"port111";
+    OSStatus a =  [[IBLKeyChainAccessor defaultAccessor] queryItem:gpItem];
+    
+    [self updateShowWithItem:gpItem andStatu:a];
+}
+
+- (IBAction)toupdate:(id)sender {
+    IBLKeyChainGPItem *gpItem =[self getKeychainItem];
+   
+    OSStatus a =  [[IBLKeyChainAccessor defaultAccessor] updateItem:gpItem];
+    
+    [self updateShowWithItem:gpItem andStatu:a];
+}
+
+- (IBLKeyChainGPItem *)getKeychainItem {
     IBLKeyChainGPItem *gpItem = [[IBLKeyChainGPItem alloc] init];
     gpItem.itemAccount = self.account.text;
     gpItem.itemValueData = [self.password.text dataUsingEncoding:NSUTF8StringEncoding];
     gpItem.itemService = self.service.text;
     gpItem.itemLabel = self.label.text;
-    gpItem.itemGeneric = @"genenenen";
     gpItem.accessGroup = [self.accessGroupTextfile.text isEqualToString:@""]?nil:self.accessGroupTextfile.text;
-//    gpItem.itemPort = @"port111";
-    OSStatus a =  [[IBLKeyChainAccessor defaultAccessor] storeItem:gpItem];
+    gpItem.itemGeneric = [self.genericFiled.text isEqualToString:@""]?nil:self.genericFiled.text;
+    gpItem.itemType = [self.serverfiled.text isEqualToString:@""]?nil:self.serverfiled.text;
+    
+    gpItem.itemComment = [self.protocolFiled.text isEqualToString:@""]?nil:self.protocolFiled.text;
+    
+    gpItem.itemDescription = [self.authTypeFiled.text isEqualToString:@""]?nil:self.authTypeFiled.text;
+    return gpItem;
+}
+
+
+- (void)updateShowWithItem:(IBLKeyChainGPItem*)gpItem andStatu:(int)a {
+    self.password.text = [NSString stringWithUTF8String:gpItem.itemValueData.bytes];
+    self.accessGroupTextfile.text = gpItem.accessGroup;
+    self.label.text = gpItem.itemLabel;
     
     self.messageLabel.text = [NSString stringWithFormat:@"结果是:%d",a];
     self.accessGroupLabel.text = [NSString stringWithFormat:@"accgroup:%@",gpItem.accessGroup];
     self.monifyDateLabel.text = [NSString stringWithFormat:@"modify:%@",gpItem.itemModifyDate];
     self.createDateLabel.text = [NSString stringWithFormat:@"crate:%@",gpItem.itemCreateDate];
-    
+    self.genericFiled.text = gpItem.itemGeneric;
+    self.serverfiled.text = gpItem.itemType;
+    self.protocolFiled.text = gpItem.itemComment;
+    self.authTypeFiled.text = gpItem.itemDescription;
 }
-- (IBAction)toquery:(id)sender {
-}
-- (IBAction)toupdate:(id)sender {
-}
-
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];

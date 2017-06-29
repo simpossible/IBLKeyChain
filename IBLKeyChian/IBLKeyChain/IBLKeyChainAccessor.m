@@ -41,6 +41,53 @@
 }
 
 
+- (IBLKeyChainCode)queryItem:(IBLKeyChainItem *)item {
+    NSMutableDictionary *query = [item queryDic];
+    [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+    
+    NSDictionary *dic = nil;
+    CFTypeRef result = (__bridge CFTypeRef)dic;
+    
+    OSStatus statu =  SecItemCopyMatching((__bridge CFDictionaryRef)query, &result);
+    
+    if (statu == noErr) {
+        CFDictionaryRef cdic = (CFDictionaryRef)result;
+        NSDictionary *rdic = (__bridge NSDictionary *)(cdic);
+        [item genParamsWithDictionar:rdic];
+    }
+    
+    return statu;
+}
 
+
+- (IBLKeyChainCode)deleteItem:(IBLKeyChainItem *)item {
+    NSMutableDictionary *query = [item queryDic];
+    [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+    
+    NSDictionary *dic = nil;
+    CFTypeRef result = (__bridge CFTypeRef)dic;
+    
+    OSStatus statu =  SecItemDelete((__bridge CFDictionaryRef)query);
+    
+    
+    return statu;
+}
+
+- (IBLKeyChainCode)updateItem:(IBLKeyChainItem *)item {
+    NSMutableDictionary *query = [item queryDic];
+    [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+    
+    NSDictionary *dic = nil;
+    CFTypeRef result = (__bridge CFTypeRef)dic;
+    
+    OSStatus statu =  SecItemCopyMatching((__bridge CFDictionaryRef)query, &result);
+    
+    if (statu == noErr) {
+        CFDictionaryRef cdic = (CFDictionaryRef)result;
+        NSDictionary *rdic = (__bridge NSDictionary *)(cdic);
+        [item genParamsWithDictionar:rdic];
+    }
+    return statu;
+}
 
 @end

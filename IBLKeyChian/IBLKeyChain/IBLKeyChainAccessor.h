@@ -45,4 +45,11 @@ typedef void (^IBLAccessResult)(NSDictionary *result) ;
 - (IBLKeyChainCode)storeItem:(IBLKeyChainItem *)item;
 
 
+- (IBLKeyChainCode)queryItem:(IBLKeyChainItem *)item;
+
+- (IBLKeyChainCode)updateItem:(IBLKeyChainItem *)item;
+
+- (IBLKeyChainCode)deleteItem:(IBLKeyChainItem *)item;
+
+
 @end
