@@ -26,10 +26,6 @@
         [dic setObject:self.itemGeneric forKey:(id)kSecAttrGeneric];
     }
     
-    if (self.itemSecurityDomain) {
-        [dic setObject:self.itemSecurityDomain forKey:(id)kSecAttrSecurityDomain];
-    }
-    
     if (self.itemValueData) {
         [dic setObject:self.itemValueData forKey:(id)kSecValueData];
     }
@@ -45,6 +41,10 @@
     }
     if (self.itemDescription) {
         [dic setObject:self.itemDescription forKey:(id)kSecAttrDescription];
+    }
+    
+    if (self.itemInvisible) {
+        [dic setObject:self.itemInvisible forKey:(id)kSecAttrIsInvisible];
     }
     
     [dic setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
@@ -65,6 +65,7 @@
         self.itemType = [dic objectForKey:(id)kSecAttrType];
         self.itemDescription = [dic objectForKey:(id)kSecAttrDescription];
         self.itemComment = [dic objectForKey:(id)kSecAttrComment];
+        self.itemInvisible = [dic objectForKey:(id)kSecAttrIsInvisible];
     }
 }
 @end

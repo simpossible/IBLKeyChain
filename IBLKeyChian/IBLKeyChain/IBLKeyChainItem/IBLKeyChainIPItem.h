@@ -21,4 +21,5 @@
 @property (nonatomic, copy) NSString * itemProtocol;
 
 @property (nonatomic, copy) NSString * itemAuthenticationType;
+@property (nonatomic, copy) NSString * itemSecurityDomain;
 @end

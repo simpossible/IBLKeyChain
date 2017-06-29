@@ -11,7 +11,7 @@
 @implementation IBLKeyChainItem
 
 - (NSMutableDictionary *)queryDic {
-    return nil;
+    return @{};
 }
 
 
