@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40722D11F5CF85000FF76D9 /* IBLKeyChiana.m in Sources */ = {isa = PBXBuildFile; fileRef = A40722D01F5CF85000FF76D9 /* IBLKeyChiana.m */; };
+		A40722D61F5CF86D00FF76D9 /* IBLKeyChainAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF561F03965E00F59FDC /* IBLKeyChainAccessor.m */; };
+		A40722D71F5CF86D00FF76D9 /* IBLKeyChainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF5D1F039D2900F59FDC /* IBLKeyChainItem.m */; };
+		A40722D81F5CF86D00FF76D9 /* IBLKeyChainGPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF601F039D6000F59FDC /* IBLKeyChainGPItem.m */; };
+		A40722D91F5CF86D00FF76D9 /* IBLKeyChainIPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF631F039DC900F59FDC /* IBLKeyChainIPItem.m */; };
+		A40722DA1F5CF86D00FF76D9 /* IBLKeyChianCerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF661F039DF500F59FDC /* IBLKeyChianCerItem.m */; };
+		A40722DB1F5CF86D00FF76D9 /* IBLKeyChainIdentyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF691F039E1F00F59FDC /* IBLKeyChainIdentyItem.m */; };
+		A40722DC1F5CF86D00FF76D9 /* IBLKeyChianKeyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF6F1F039E7400F59FDC /* IBLKeyChianKeyItem.m */; };
+		A40722DD1F5CF88700FF76D9 /* IBLKeyChainAccessor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF551F03965E00F59FDC /* IBLKeyChainAccessor.h */; };
+		A40722DE1F5CF88700FF76D9 /* IBLKeyChainItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF5C1F039D2900F59FDC /* IBLKeyChainItem.h */; };
+		A40722DF1F5CF88700FF76D9 /* IBLKeyChainGPItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF5F1F039D6000F59FDC /* IBLKeyChainGPItem.h */; };
+		A40722E01F5CF88700FF76D9 /* IBLKeyChainIPItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF621F039DC900F59FDC /* IBLKeyChainIPItem.h */; };
+		A40722E11F5CF88700FF76D9 /* IBLKeyChianCerItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF651F039DF500F59FDC /* IBLKeyChianCerItem.h */; };
+		A40722E21F5CF88700FF76D9 /* IBLKeyChainIdentyItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF681F039E1F00F59FDC /* IBLKeyChainIdentyItem.h */; };
+		A40722E31F5CF88700FF76D9 /* IBLKeyChianKeyItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A487AF6E1F039E7400F59FDC /* IBLKeyChianKeyItem.h */; };
 		A487AF571F03965E00F59FDC /* IBLKeyChainAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF561F03965E00F59FDC /* IBLKeyChainAccessor.m */; };
 		A487AF5E1F039D2900F59FDC /* IBLKeyChainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF5D1F039D2900F59FDC /* IBLKeyChainItem.m */; };
 		A487AF611F039D6000F59FDC /* IBLKeyChainGPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A487AF601F039D6000F59FDC /* IBLKeyChainGPItem.m */; };
@@ -22,7 +37,31 @@
 		A4A4AE4B1F028FBD00E9231A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A4AE491F028FBD00E9231A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A40722CB1F5CF85000FF76D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A40722DD1F5CF88700FF76D9 /* IBLKeyChainAccessor.h in CopyFiles */,
+				A40722DE1F5CF88700FF76D9 /* IBLKeyChainItem.h in CopyFiles */,
+				A40722DF1F5CF88700FF76D9 /* IBLKeyChainGPItem.h in CopyFiles */,
+				A40722E01F5CF88700FF76D9 /* IBLKeyChainIPItem.h in CopyFiles */,
+				A40722E11F5CF88700FF76D9 /* IBLKeyChianCerItem.h in CopyFiles */,
+				A40722E21F5CF88700FF76D9 /* IBLKeyChainIdentyItem.h in CopyFiles */,
+				A40722E31F5CF88700FF76D9 /* IBLKeyChianKeyItem.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		04533A97FA2E57D0FBDACF5A /* Pods-IBLKeyChian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBLKeyChian.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBLKeyChian/Pods-IBLKeyChian.release.xcconfig"; sourceTree = "<group>"; };
+		A40559361F5F921700E24961 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A40722CD1F5CF85000FF76D9 /* libIBLKeyChian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBLKeyChian.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40722CF1F5CF85000FF76D9 /* IBLKeyChiana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLKeyChiana.h; sourceTree = "<group>"; };
+		A40722D01F5CF85000FF76D9 /* IBLKeyChiana.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBLKeyChiana.m; sourceTree = "<group>"; };
 		A470E35D1F03BC6200B420AC /* IBLKeyChian.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBLKeyChian.entitlements; sourceTree = "<group>"; };
 		A487AF551F03965E00F59FDC /* IBLKeyChainAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLKeyChainAccessor.h; sourceTree = "<group>"; };
 		A487AF561F03965E00F59FDC /* IBLKeyChainAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLKeyChainAccessor.m; sourceTree = "<group>"; };
@@ -38,7 +77,7 @@
 		A487AF691F039E1F00F59FDC /* IBLKeyChainIdentyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLKeyChainIdentyItem.m; sourceTree = "<group>"; };
 		A487AF6E1F039E7400F59FDC /* IBLKeyChianKeyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLKeyChianKeyItem.h; sourceTree = "<group>"; };
 		A487AF6F1F039E7400F59FDC /* IBLKeyChianKeyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBLKeyChianKeyItem.m; sourceTree = "<group>"; };
-		A4A4AE381F028FBD00E9231A /* IBLKeyChian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLKeyChian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4AE381F028FBD00E9231A /* IBLKeyChianb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLKeyChianb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A4AE3C1F028FBD00E9231A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A4AE3E1F028FBD00E9231A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4A4AE3F1F028FBD00E9231A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,9 +87,17 @@
 		A4A4AE471F028FBD00E9231A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A4AE4A1F028FBD00E9231A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4A4AE4C1F028FBD00E9231A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB52521CA95857CEB64864D8 /* Pods-IBLKeyChian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBLKeyChian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBLKeyChian/Pods-IBLKeyChian.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A40722CA1F5CF85000FF76D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4A4AE351F028FBD00E9231A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +108,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		353E37DCA8DE0B09A0698539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40559361F5F921700E24961 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C652056856B35509AAB716C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB52521CA95857CEB64864D8 /* Pods-IBLKeyChian.debug.xcconfig */,
+				04533A97FA2E57D0FBDACF5A /* Pods-IBLKeyChian.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A40722CE1F5CF85000FF76D9 /* IBLKeyChiana */ = {
+			isa = PBXGroup;
+			children = (
+				A40722CF1F5CF85000FF76D9 /* IBLKeyChiana.h */,
+				A40722D01F5CF85000FF76D9 /* IBLKeyChiana.m */,
+			);
+			path = IBLKeyChiana;
+			sourceTree = "<group>";
+		};
 		A487AF5B1F039D2900F59FDC /* IBLKeyChainItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				A4A4AE3A1F028FBD00E9231A /* IBLKeyChian */,
+				A40722CE1F5CF85000FF76D9 /* IBLKeyChiana */,
 				A4A4AE391F028FBD00E9231A /* Products */,
+				9C652056856B35509AAB716C /* Pods */,
+				353E37DCA8DE0B09A0698539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A4A4AE391F028FBD00E9231A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4A4AE381F028FBD00E9231A /* IBLKeyChian.app */,
+				A4A4AE381F028FBD00E9231A /* IBLKeyChianb.app */,
+				A40722CD1F5CF85000FF76D9 /* libIBLKeyChian.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +212,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4A4AE371F028FBD00E9231A /* IBLKeyChian */ = {
+		A40722CC1F5CF85000FF76D9 /* IBLKeyChian */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4A4AE4F1F028FBD00E9231A /* Build configuration list for PBXNativeTarget "IBLKeyChian" */;
+			buildConfigurationList = A40722D51F5CF85000FF76D9 /* Build configuration list for PBXNativeTarget "IBLKeyChian" */;
+			buildPhases = (
+				ECBCE4D8E781435C30AD3E7F /* [CP] Check Pods Manifest.lock */,
+				A40722C91F5CF85000FF76D9 /* Sources */,
+				A40722CA1F5CF85000FF76D9 /* Frameworks */,
+				A40722CB1F5CF85000FF76D9 /* CopyFiles */,
+				80B2688367FEBE6239E4DBB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBLKeyChian;
+			productName = IBLKeyChiana;
+			productReference = A40722CD1F5CF85000FF76D9 /* libIBLKeyChian.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4A4AE371F028FBD00E9231A /* IBLKeyChianb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A4AE4F1F028FBD00E9231A /* Build configuration list for PBXNativeTarget "IBLKeyChianb" */;
 			buildPhases = (
 				A4A4AE341F028FBD00E9231A /* Sources */,
 				A4A4AE351F028FBD00E9231A /* Frameworks */,
@@ -147,9 +243,9 @@
 			);
 			dependencies = (
 			);
-			name = IBLKeyChian;
+			name = IBLKeyChianb;
 			productName = IBLKeyChian;
-			productReference = A4A4AE381F028FBD00E9231A /* IBLKeyChian.app */;
+			productReference = A4A4AE381F028FBD00E9231A /* IBLKeyChianb.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,6 +257,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Ahead;
 				TargetAttributes = {
+					A40722CC1F5CF85000FF76D9 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 4SND9369ME;
+					};
 					A4A4AE371F028FBD00E9231A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4SND9369ME;
@@ -186,7 +286,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4A4AE371F028FBD00E9231A /* IBLKeyChian */,
+				A40722CC1F5CF85000FF76D9 /* IBLKeyChian */,
+				A4A4AE371F028FBD00E9231A /* IBLKeyChianb */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +305,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80B2688367FEBE6239E4DBB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBLKeyChian/Pods-IBLKeyChian-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBCE4D8E781435C30AD3E7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBLKeyChian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A40722C91F5CF85000FF76D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40722DB1F5CF86D00FF76D9 /* IBLKeyChainIdentyItem.m in Sources */,
+				A40722D71F5CF86D00FF76D9 /* IBLKeyChainItem.m in Sources */,
+				A40722DC1F5CF86D00FF76D9 /* IBLKeyChianKeyItem.m in Sources */,
+				A40722D61F5CF86D00FF76D9 /* IBLKeyChainAccessor.m in Sources */,
+				A40722D11F5CF85000FF76D9 /* IBLKeyChiana.m in Sources */,
+				A40722D81F5CF86D00FF76D9 /* IBLKeyChainGPItem.m in Sources */,
+				A40722D91F5CF86D00FF76D9 /* IBLKeyChainIPItem.m in Sources */,
+				A40722DA1F5CF86D00FF76D9 /* IBLKeyChianCerItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4A4AE341F028FBD00E9231A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +396,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A40722D31F5CF85000FF76D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB52521CA95857CEB64864D8 /* Pods-IBLKeyChian.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4SND9369ME;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A40722D41F5CF85000FF76D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04533A97FA2E57D0FBDACF5A /* Pods-IBLKeyChian.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4SND9369ME;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A4A4AE4D1F028FBD00E9231A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +561,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A40722D51F5CF85000FF76D9 /* Build configuration list for PBXNativeTarget "IBLKeyChian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40722D31F5CF85000FF76D9 /* Debug */,
+				A40722D41F5CF85000FF76D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A4A4AE331F028FBC00E9231A /* Build configuration list for PBXProject "IBLKeyChian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -374,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4A4AE4F1F028FBD00E9231A /* Build configuration list for PBXNativeTarget "IBLKeyChian" */ = {
+		A4A4AE4F1F028FBD00E9231A /* Build configuration list for PBXNativeTarget "IBLKeyChianb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4A4AE501F028FBD00E9231A /* Debug */,
