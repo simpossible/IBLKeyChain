@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IBLKeyChain"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "keychain 的方便存储的库，方便使用以及理解"
 
   # This description is used to generate tags and improve search results.
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "IBLKeyChian", "IBLKeyChian/**/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  = "IBLKeyChian", "IBLKeyChian/IBLKeyChain/**/*.{h,m}"
+  s.exclude_files = "Pod"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "UIKit"
+  # s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
